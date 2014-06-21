@@ -1,15 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-int power (int X, int Y)
+int power(int x,unsigned int y)
 {
-int i;
-int value = 1;
-    for (i = 0; i < Y; i++)
-
-    value *= X;
-
-    return value;
+	if(y==0)
+	{
+		return 1;
+	}
+	else if(y%2==0)
+	{
+		return power(x,y/2)*power(x,y/2);
+	}
+	else
+	{
+		return x*power(x,y/2)*power(x,y/2);
+	
+	}
 }
 int main()
 {
