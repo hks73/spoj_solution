@@ -2,9 +2,9 @@
 int main()
 {
 
-	int i,num,fact=1;
+	long long int i,num,fact=1;
 	i=2;
-	scanf("%d",&num);
+	scanf("%lld",&num);
 	while(i<=num)
 	{
 		fact=fact*i;
@@ -12,6 +12,6 @@ int main()
 
 
 	}
-	printf("%d\n",fact );
+	printf("value is %lld\n",fact );
 	return 0;
 }
