@@ -17,6 +17,7 @@ using namespace std;
 
 #define inf 1000000000
 #define MAXN 100000
+ n
 
 
 int main()
@@ -49,4 +50,4 @@ int main()
     }
     
     return 0;
-} 
+}
