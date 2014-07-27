@@ -1,6 +1,6 @@
 # include <stdio.h>
 # define bool int
-int findCandidate(int *, int);
+
 bool isMajority(int *, int, int);
 void printMajority(int a[], int size)
 {

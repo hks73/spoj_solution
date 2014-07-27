@@ -10,8 +10,7 @@ typedef struct Helix
 {
     int val;
     int sum;
-}Helix;
- 
+}Helix; 
 int main(){
     int i,j,k,t;
     Helix helix1[MX];
@@ -54,12 +53,15 @@ int main(){
             if( helix1[i].val < helix2[j].val ) i++;
             else if( helix2[j].val < helix1[i].val ) j++;
             else {
+            	
                 string_sum1 = helix1[i].sum - last_common_i_sum;
                 string_sum2 = helix2[j].sum - last_common_j_sum;
-                if( string_sum1 > string_sum2 ){
+                if( string_sum1 > string_sum2 )
+                {
                     maxsum += string_sum1;
                 }
-                else{
+                else
+                {
                     maxsum += string_sum2;
                 }
                 last_common_i_sum = helix1[i].sum;
