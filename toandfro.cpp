@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    int col,te,i,j,flag;
+    int col,te,i,j,flag,t;
     char a[1000];
     cin>>t;
     while(t--)
